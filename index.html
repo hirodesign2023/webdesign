@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>WebDesign</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="favicon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body id="top">
+    <!-- divはグループ化の始まり グループ名は数字から始まる名前はダメ-->
+    <div class="containmer">
+        <header>
+            <!-- Ctrl+/でこの緑文字のようになり文字をブラウザで表示させないようにできる -->
+            <!-- サイト名は大見出しh1を設定する -->
+            <h1><a href="index.html">WebDesign</a></h1>
+
+            <!-- メニューはリストul-liを設定する.
+    ブラウザ上では無条件で頭に●がついてくる -->
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active
+                        ">HOME</a></li>
+
+                <!-- #は「後で記入します」というサイン。＃はエラーにならないので使える -->
+                <li><a href="next.html">下層ページの構成</a></li>
+                <li><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+        </nav>
+        <!-- ［メインビジュアル］ -->
+        <p class="visual"><img src="img/web.jpg" alt="Webページ制作言語"></p>
+
+        <main>
+            <section>
+                <h2>TOPページの見出し</h2>
+
+                <!-- 文字（本文）を選択後Alt+wを押してｐを入力すると自動でタグを入力してくれる -->
+                <p>TOPページの大見出し（h1）はサイト名に設定するので、mainタグ内は中見出し（h2）から使い始める。</p>
+            </section>
+            <section>
+                <h2>セクションとは</h2>
+                <p>見出しとその内容は、sectionタグでグループ化する。小見出しがある場合、中見出し（h2）のsectionの中に小見出し（h3）のsecti onが入ることもある。</p>
+            </section>
+            <aside>
+                <p>バナーや注意書き、サイドバーなどの補足情報はasideで囲む。</p>
+            </aside>
+        </main>
+    </div>
+    <footer>
+        <p class="pagetop"><a href="#top"><img src="img/gotop.svg" width="32" alt="ページトップ へ"></a></p>
+        <p class="copyright">
+            <small>
+                &copy;2021 WebDesign.
+                <span>All Rights Reserved.</span>
+            </small>
+        </p>
+
+    </footer>
+    <!-- <li>の中には大量の情報ははいらない -->
+</body>
+</html>
